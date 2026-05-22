@@ -1,0 +1,99 @@
+{
+  "theme": "light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "design_philosophy": "Clean, authoritative, and frictionless. Combines the high-trust structure of a premium local service with the bold, high-contrast aesthetic of a modern hustler-driven business.",
+  "typography": {
+    "heading_font": "Outfit, sans-serif",
+    "body_font": "DM Sans, sans-serif",
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-black",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "body": "text-base leading-relaxed",
+      "labels": "text-sm uppercase tracking-[0.2em] font-bold"
+    }
+  },
+  "color_palette": {
+    "background_primary": "#FFFFFF",
+    "background_secondary": "#F4F4F5",
+    "text_primary": "#09090B",
+    "text_secondary": "#52525B",
+    "accent": "#EAB308",
+    "accent_hover": "#CA8A04",
+    "destructive": "#EF4444",
+    "border": "#E4E4E7"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-6 lg:px-8",
+    "section_spacing": "py-20 lg:py-32",
+    "border_radius": "rounded-none",
+    "grid_strategy": "Control Room style for services (dense 3x3 or bento). Generous negative space between major sections. Use 1px solid borders for definition instead of soft shadows."
+  },
+  "components_strategy": {
+    "buttons": "Sharp corners (rounded-none), high contrast. Primary CTA is Warning Yellow (#EAB308) with black text. Secondary CTA is outline with black border.",
+    "cards": "Flat background, 1px solid border (border-zinc-200), no drop shadow. Hover effect: -translate-y-1 with a hard shadow (e.g. shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]).",
+    "forms": "Use Shadcn Form, Input, Select, Textarea. Inputs should have square corners, thick borders on focus (ring-2 ring-black).",
+    "navigation": "Sticky, crystal glass backdrop-blur-xl bg-white/80, 1px bottom border."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1574462233115-1a4a05e33433",
+        "category": "hero",
+        "description": "Truck hauling items, perfect for the hero section background with a white/20 gradient overlay for text readability."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1580709839515-54b8991e2813",
+        "category": "about",
+        "description": "Young man sitting, use in the 'About the 16-year-old owner' section."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1709831917664-804b57448953",
+        "category": "services_background",
+        "description": "Cluttered garage, good for a 'Before' state or a visually striking background behind a CTA."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
+        "category": "service_area",
+        "description": "Suburban house in Ohio, use as a contextual image for the service area section."
+      }
+    ]
+  },
+  "icons": {
+    "library": "lucide-react",
+    "usage": "Use bold, distinct icons for the 9 services (e.g., Leaf for yard waste, Box for cardboard, Wrench for scrap metal, Armchair for furniture, Package for garage clutter, Trash for basement, Truck for curbside, Refrigerator for appliance, Home for moving leftovers)."
+  },
+  "sections": [
+    {
+      "name": "Header",
+      "instructions": "Logo 'Cox Junk Removal' left, phone number (937-270-8923) right with a prominent 'Get Quote' button. Must be sticky."
+    },
+    {
+      "name": "Hero",
+      "instructions": "High impact. Headline: 'Springfield\\'s Hustle-Driven Junk Removal'. Subtext: 'Fast, reliable, and owner-operated by a 16-year-old entrepreneur. Get your space back today.' Two CTAs: 'Request a Quote' (Yellow) and 'Call 937-270-8923' (Outline)."
+    },
+    {
+      "name": "Services Grid",
+      "instructions": "Grid layout (grid-cols-1 md:grid-cols-3). Display all 9 services clearly with icons. Use the 'Grid Borders (Technical)' surface strategy for the cards: flat, 1px borders, crisp."
+    },
+    {
+      "name": "About the Owner",
+      "instructions": "Lean into the young-hustler story. 50/50 split layout. Image of the young man on one side, a bold typography story on the other. Emphasize work ethic, reliability, and local roots."
+    },
+    {
+      "name": "Quote Request Form",
+      "instructions": "Clean, structured form using Shadcn. Fields: Name, Phone, Address, Service Type (Select dropdown), Description (Textarea). Place in a high-contrast container (maybe black background with white form cards, or vice versa)."
+    },
+    {
+      "name": "Service Area & Contact",
+      "instructions": "Highlight Springfield, OH and nearby towns. Display phone number massively (e.g., text-6xl tracking-tighter). Include business hours."
+    },
+    {
+      "name": "Footer",
+      "instructions": "Dark footer (bg-zinc-950 text-zinc-400). Big text 'Cox Junk Removal'. Links to services, contact info."
+    }
+  ],
+  "accessibility_and_testing": {
+    "instructions": "All interactive elements MUST have data-testid attributes (e.g., data-testid='hero-quote-button'). Ensure high contrast ratios, especially for the Warning Yellow CTA buttons against white/black."
+  }
+}
