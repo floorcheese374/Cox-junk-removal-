@@ -77,7 +77,7 @@ export default function ServiceArea() {
                   <Mail className="mt-0.5 h-4 w-4 text-yellow-400" strokeWidth={2.5} />
                   <div>
                     <p className="label-eyebrow text-zinc-500">Email</p>
-                    <p className="font-display font-bold">cox.junkremoval@gmail.com</p>
+                    <p className="font-display font-bold">Cox.junkremoval937@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
