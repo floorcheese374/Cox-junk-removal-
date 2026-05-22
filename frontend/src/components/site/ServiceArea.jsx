@@ -13,9 +13,11 @@ const TOWNS = [
 ];
 
 const HOURS = [
-  { d: "Mon – Fri", h: "8:00 AM – 7:00 PM" },
-  { d: "Saturday", h: "9:00 AM – 5:00 PM" },
-  { d: "Sunday", h: "By appointment" },
+  { d: "Thursday", h: "8:00 AM – 6:00 PM" },
+  { d: "Friday", h: "8:00 AM – 6:00 PM" },
+  { d: "Sunday", h: "10:00 AM – 5:00 PM" },
+  { d: "Mon – Wed", h: "By appointment" },
+  { d: "Saturday", h: "Closed" },
 ];
 
 export default function ServiceArea() {
