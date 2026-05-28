@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: #09090b;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+::selection {
+    background-color: #EAB308;
+    color: #09090b;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 4%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 4%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 4%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96%;
+        --muted-foreground: 0 0% 32%;
+        --accent: 48 96% 53%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89%;
+        --input: 0 0% 89%;
+        --ring: 0 0% 9%;
+        --radius: 0;
+    }
+}
+
+@layer base {
+    * { @apply border-border; }
+    body { @apply bg-background text-foreground; }
+}
+
+/* Neo-brutalist hard shadow utility */
+.shadow-brutal {
+    box-shadow: 4px 4px 0px 0px rgba(9, 9, 11, 1);
+}
+.shadow-brutal-lg {
+    box-shadow: 8px 8px 0px 0px rgba(9, 9, 11, 1);
+}
+.shadow-brutal-yellow {
+    box-shadow: 6px 6px 0px 0px #EAB308;
+}
+
+.label-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Subtle grid background for sections */
+.bg-grid {
+    background-image:
+        linear-gradient(rgba(9, 9, 11, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(9, 9, 11, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+/* Marquee animation for trust strip */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+}
