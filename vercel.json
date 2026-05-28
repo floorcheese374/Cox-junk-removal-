@@ -5,6 +5,7 @@
       "mount": "/"
     },
     "backend": {
+      "framework": "fastapi",
       "mount": "/api"
     }
   }
